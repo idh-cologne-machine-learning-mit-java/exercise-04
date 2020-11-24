@@ -6,14 +6,14 @@ They should be the same.
 
 ## Weka-GUI
 
-Correctly Classified Instances       32221               92.4536 %
-Incorrectly Classified Instances      2630                7.5464 %
-Kappa statistic                          0.3586
-Mean absolute error                      0.0266
-Root mean squared error                  0.1389
-Relative absolute error                 53.1366 %
-Root relative squared error             87.9069 %
-Total Number of Instances            34851
+    Correctly Classified Instances       32221               92.4536 %
+    Incorrectly Classified Instances     2630                7.5464 %
+    Kappa statistic                      0.3586
+    Mean absolute error                  0.0266
+    Root mean squared error              0.1389
+    Relative absolute error              53.1366 %
+    Root relative squared error          87.9069 %
+    Total Number of Instances            34851
 
 === Detailed Accuracy By Class ===
 
@@ -41,14 +41,14 @@ Total Number of Instances            34851
 
 ## Weka-Java
 
-Correctly Classified Instances       32221               92.4536 %
-Incorrectly Classified Instances      2630                7.5464 %
-Kappa statistic                          0.3586
-Mean absolute error                      0.0266
-Root mean squared error                  0.1389
-Relative absolute error                 53.1366 %
-Root relative squared error             87.9069 %
-Total Number of Instances            34851
+    Correctly Classified Instances       32221               92.4536 %
+    Incorrectly Classified Instances     2630                7.5464 %
+    Kappa statistic                      0.3586
+    Mean absolute error                  0.0266
+    Root mean squared error              0.1389
+    Relative absolute error              53.1366 %
+    Root relative squared error          87.9069 %
+    Total Number of Instances            34851
 
 === Detailed Accuracy By Class ===
 

@@ -4,7 +4,7 @@ Evaluation of both classifiers. They are both the same. One made with the Weka G
 They should be the same.
 
 
-##Weka-GUI
+## Weka-GUI
 
 Correctly Classified Instances       32221               92.4536 %
 Incorrectly Classified Instances      2630                7.5464 %
@@ -39,7 +39,7 @@ Weighted Avg.    0,925    0,669    ?          0,925    ?          ?        0,841
     30     1     0     0     0     0     2 |     g = I-EntityWRK
 
 
-##Weka-Java
+## Weka-Java
 
 Correctly Classified Instances       32221               92.4536 %
 Incorrectly Classified Instances      2630                7.5464 %
@@ -73,5 +73,5 @@ Weighted Avg.    0,925    0,669    ?          0,925    ?          ?        0,841
     16     0     0     0     0     0     0 |     f = B-EntityWRK
     30     1     0     0     0     0     2 |     g = I-EntityWRK
 
-##Summary
+## Summary
 They are both the same.

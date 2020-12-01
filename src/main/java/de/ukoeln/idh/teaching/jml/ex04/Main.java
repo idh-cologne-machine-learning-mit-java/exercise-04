@@ -18,10 +18,9 @@ import weka.filters.unsupervised.attribute.StringToNominal;
 public class Main {
 
 	public static void main(String[] args) throws Exception {
-		// Parse command line options
+		// Parse command line options. Not in exercise, but useful
 		// This is done with the libarary JewelCLI
 		// http://jewelcli.lexicalscope.com
-		// Not necessary for the exercise, but useful
 		Options options = CliFactory.parseArguments(Options.class, args);
 
 		// load data set
@@ -44,17 +43,13 @@ public class Main {
 		filter1.setInputFormat(instances);
 		instances = Filter.useFilter(instances, filter1);
 
-		// Initialise the classifier
-		// If it has options, set them here
+		// Initialise the classifier, potentially with parameters
 		NaiveBayes nb = new NaiveBayes();
 
-		// Evaluation
-		// Use the built-in handling of cross validation and evaluation
+		// Evaluation with the built-in handling of cross validation and evaluation
 		Evaluation evaluation = new Evaluation(instances);
 		evaluation.crossValidateModel(nb, instances, options.getNumberOfFolds(), new Random(options.getRandomSeed()));
 		System.out.println(evaluation.toClassDetailsString());
-
-		doCrossValidation(instances, nb, options);
 	}
 
 	/**
@@ -88,10 +83,8 @@ public class Main {
 			// print all or the first 100 (whichever is smaller) predictions
 			// from this fold
 			for (int i = 0; i < (Math.min(test.numInstances(), 100)); i++) {
-				System.err.print(test.get(i).classValue());
-				System.err.print(" ");
-				System.err.print(predictions[i]);
-				System.err.print("|");
+				System.err.print(test.get(i).classValue() + " ");
+				System.err.print(predictions[i] + "|");
 			}
 			System.err.println();
 		}
